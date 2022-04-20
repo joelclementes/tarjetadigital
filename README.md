@@ -19,6 +19,8 @@ Para ello puedes ir al botón verde que está más arriba, que dice Code.
 Abre el proyecto en tu navegador web y listo!
 
 ## Volver a cargar los archivos a este repositorio existente
+```
 git remote add origin https://github.com/joelclementes/tarjetadigital.git
 git branch -M master
 git push -u origin master
+```
