@@ -1,0 +1,41 @@
+/* formulario de contacto */
+.contact-form{
+    --form-ok-color: #4caf50;
+    --form-error-color: #f44336;
+    /* width:80% */
+}
+
+.contact-form > * {
+    margin-bottom: 10px;
+}
+.contact-form textarea{
+    resize: none;
+}
+.contact-form *::placeholder {
+    color:#2f2f2f;
+}
+.contact-form [required]:valid{
+    border: thin solid var(--form-ok-color) !important;
+}
+.contact-form [required]:invalid{
+    border: thin solid var(--form-error-color) !important;
+}
+
+.contact-form-error{
+    margin-top:-.5rem;
+    /* padding:4px; */
+    padding:0 7px;
+    font-size:80%;
+    background: var(--form-error-color);
+    color:#fff;
+    transition: all 800ms ease;
+    border-radius: 5px;
+}
+.contact-form-error.is-active{
+    display:block;
+    animation:show-message 1s 1 normal 0s ease-out both;
+}
+
+.none{
+    display:none;
+}
